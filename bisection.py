@@ -16,8 +16,8 @@ def bisection_method(func, a, b, tol=1e-6, max_iter=100):
             
     raise RuntimeError("The method did not converge within the maximum number of iterations.")
 
-def example_func(x):
+def functn(x):
     return x ** 3 - x - 1
 
-root = bisection_method(example_func, 1, 2)
+root = bisection_method(functn, 1, 2)
 print("Root approximation:", root)
